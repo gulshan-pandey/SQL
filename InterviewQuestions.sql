@@ -9,6 +9,8 @@
 --      Indexing is mainly used in read intensive database (means the database where mainly read queries are used ), 
 --      If the table where there is Insertion, update,write intensive , we should not use Indexing 
 
+
+
 -- Interview question: What is a clustered index, and how is it different from a non-clustered index?
 -- Ans: A clustered index determines the physical order of the data in the table. A table can only have one clustered index, as data rows can only be sorted in one order. A non-clustered index, on the other hand, creates a separate structure from the data rows, and the index contains pointers to the physical data locations.
 
