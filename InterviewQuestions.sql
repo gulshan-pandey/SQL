@@ -3,11 +3,13 @@
 -- Interview question: you are given a table, in which you have 100 rows... but in the future you will have 1million rows, then how will you retrieve(optimized retriving ) data form that table
 -- Ans: The answer will be we will use indexing on the column, so earlier it was O(n) but after indexing it will retrieve in O(logn)
 
--- Next qustion: what is indexing, and what it does, and what it is ued for : 
+-- Next qustion: what is indexing, and what it does, and what it is used for : 
 -- Ans: Indexing creates a seperate memory location , in that memory that specific column gets stored in the sorted manner, and side by side it also saves the pointer for memmory location, for that memory location 
 --      B-tree data structure is used to store the indexing as it is a multilevel format of tree-based indexing which has balanced binary search tree 
 --      Indexing is mainly used in read intensive database (means the database where mainly read queries are used ), 
 --      If the table where there is Insertion, update,write intensive , we should not use Indexing 
+
+
 
 -- Interview question: What is a clustered index, and how is it different from a non-clustered index?
 -- Ans: A clustered index determines the physical order of the data in the table. A table can only have one clustered index, as data rows can only be sorted in one order. A non-clustered index, on the other hand, creates a separate structure from the data rows, and the index contains pointers to the physical data locations.
